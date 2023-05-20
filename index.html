@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabla de Estudiantes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registro de notas</h1>
+    <form id="formulario">
+        <label>Nombre:</label>
+        <input type="text" id="nombre" required>
+        <label>Identificación:</label>
+        <input type="text" id="identificacion" required>
+        <label>Nota 1:</label>
+        <input type="number" min="0" max="5" step="0.1" id="nota1" required>
+        <label>Nota 2:</label>
+        <input type="number" min="0" max="5" step="0.1" id="nota2" required>
+        <label>Nota 3:</label>
+        <input type="number" min="0" max="5" step="0.1" id="nota3" required>
+        <button onclick="agregarEstudiante();">Agregar Estudiante</button>
+    </form>
+    <p>Ganaron: <span id="ganadores"></span></p>
+    <p>Perdieron: <span id="perdedores"></span></p>
+    <p>Promedio más alto: <span id="promedio-mas-alto"></span></p>
+    <h3>Tabla de Estudiantes</h3>
+    <table id="tabla-estudiantes">
+      <tr>
+        <th>Nombre</th>
+        <th>Identificación</th>
+        <th>Nota 1</th>
+        <th>Nota 2</th>
+        <th>Nota 3</th>
+        <th>Promedio</th>
+        <th>Calificación</th>
+        <th>Opciones</th>
+      </tr>
+    </table>
+    <script src="index.js"></script>
+</body>
+</html>
